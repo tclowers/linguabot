@@ -1,0 +1,186 @@
+
+html, body{ 
+ margin:0; 
+ padding:0; 
+ text-align:center;
+ background: white;
+}
+
+#pagewidth {
+	/*width:78%;*/
+	width: 958px;
+	text-align:center; 
+	margin:0 auto;
+	background: white;
+}
+
+#topline {
+ position:relative; 
+ height:10px; 
+ background-color:white;
+ width:100%;
+}
+
+#header{
+ position:relative; 
+ height:55px; 
+ /*background-color:#1d80a1;*/
+ width:100%;
+ display:block;
+ text-align:left;
+ /*overflow:hidden;*/
+}
+
+#spaceit {
+ position:relative;
+ /*top: 5px;*/
+ height:1.2em; 
+ background-color:white;
+ width:100%;
+ clear:both;
+}
+
+#footer{
+ height:4em; 
+ background: white;
+ width: 80%;
+ clear:both;
+ display:block;
+ overflow:hidden;
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+
+ border-style: solid;
+ border-width: 1px;
+ border-color: white;
+ border-top-color: #ccccff;
+}
+
+.clearfix:after {
+ content: "."; 
+ display: block; 
+height: 0; 
+ clear: both; 
+ visibility: hidden;
+ }
+ 
+.clearfix{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */  
+
+#radiustest {
+	background-color: white;
+	color: #1d80a1;
+	/*width: 200px;
+	height: 38px;*/
+	position: relative;
+	/*top: 1.6em;
+	left: 1.6em;*/
+	float: right;
+	line-height: 3em;
+	text-align:center;
+
+	/*border-radius: 0.5em;
+	-moz-border-radius: 0.5em;*/
+
+	height: 2.5em;
+	width: 12em;
+	-moz-border-radius: 4em 0.8em 4em 0.8em;
+	border-radius: 4em 0.9em 4em 0.9em;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1d80a1;
+}
+
+#maincol {
+	background-color: #FFFFFF;
+	position: relative;
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+	text-align: center;
+	width:100%;
+	min-width: 100%;
+	min-height: 40%;
+	height: 400px;
+	/*height: 600px;*/
+	background: white;
+}
+
+#dictionary {
+	clear: both;
+	position: relative;
+	top: 1%;
+	display: inline-block;
+	text-align: center;
+	width: 8em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	font-family: 'Wonton W01';
+	font-size: 4.2em;
+	line-height: 50pt;
+	font-weight: normal;
+	color: #1d80a1;
+}
+
+.gray {
+	color: dimgray;
+}
+
+img {
+	border-style: none;
+}
+
+.headimage {
+	cursor: default;
+}
+
+#entryform {
+	position: relative;
+	top: 40px;
+	display: inline-block;
+	margin-left: auto;
+ 	margin-right: auto;
+	text-align: center;
+	width: 50em;
+	/*padding: 0.8em;*/
+	background: white;
+}
+
+#qbox {
+	width:30em;
+	height: 2.4em;
+	padding: 0.5em 3px;
+	position: relative;
+	/*display: block;
+	margin-left: auto;
+ 	margin-right: auto;*/
+	text-align: center;
+	font-size: 1.06em;
+	
+}
+
+#lookup {
+	position: relative;
+	left: 1em;
+	padding: 0.5em 0.6em;
+	font-size: 1.06em;
+	font-weight: bold;
+}
+
+/* ******************************************************************** */ 
+/*                      printer styles                                  */ 
+/* ******************************************************************** */ 
+     
+ @media print{ 
+
+/*hide the right column when printing*/ 
+#rightcol{display:none;} 
+#twocols, #maincol{width:100%; float:none;}
+}

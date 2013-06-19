@@ -1,0 +1,16 @@
+<!-- Sound Manager 2 Stuff  -->
+<script type="text/javascript" src="./sm2/script/soundmanager2-nodebug-jsmin.js"></script>
+<!-- Or, with debug: -->
+<!--<script type="text/javascript" src="./sm2/script/soundmanager2.js"></script>-->
+<script type="text/javascript">
+soundManager.url = './sm2/swf/';
+soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+soundManager.useFlashBlock = false; // optionally, enable when you're ready to dive in
+// enable HTML5 audio support, if you're feeling adventurous. iPad/iPhone will always get this.
+// soundManager.useHTML5Audio = true;
+soundManager.onready(function() {
+  // Ready to use; soundManager.createSound() etc. can now be called.
+});
+</script>
+
+<!-- end Sound Manager 2 -->

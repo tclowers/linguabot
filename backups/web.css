@@ -1,0 +1,32 @@
+#top {
+	background-color: #ccc;
+	padding: 1em
+}
+
+#top h1 {
+	color: #ff0;
+}
+
+#top p {
+	color: red;
+	font-weight: bold;
+}
+
+a.snowman:link {
+	color: blue;
+}
+
+a.snowman:visited {
+	color: purple;
+}
+
+a.snowman:active {
+	color: red;
+}
+
+a.snowman:hover {
+	text-decoration: none;
+	color: blue;
+	background-color: yellow;
+}
+

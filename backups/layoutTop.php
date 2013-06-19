@@ -1,0 +1,42 @@
+</head>
+<body>
+<div id="pagewidth">
+	<div id="topline"> </div>
+	<div id="wrapper" class="clearfix">
+		<div id="twocols">
+			<div id="logo">
+				<img src="logo.png"/>
+			</div> <!--end logo -->
+			<div id="nav">
+				<ul>
+					<li><a href="this.html" class="selected">Dictionary</a></li>
+					<li>|</li>
+					<li><a href="credits.php" class="option">Trainer</a></li>
+					<li>|</li>
+					<li><a href="credits.php" class="option">Games</a></li>
+					<li>|</li>
+					<li><a href="credits.php" class="option">About</a></li>
+					<li>|</li>
+					<li><a href="that.html" class="option">Help</a></li>
+				</ul>
+			</div> <!-- end nav -->
+
+
+			<div id="entryform">
+				<form action="dictLookup.php" method="get">
+				<span id="searchlabel">Dictionary Lookup:</span>
+				<?php
+					$word = $_GET["word"];
+					if ($word) {
+						echo "<input type=\"text\" name=\"word\" value=\"" . $word . "\" id=\"qbox\"/>\n";
+					} else {
+						echo "<input type=\"text\" name=\"word\" value=\"Enter English, Chinese, or Pinyin here\" id=\"qbox\"/>\n";
+					}
+				?>
+				<input type="submit" id="lookup" value="Go" />
+				</form>
+			</div> <!--end entryform -->
+
+			<div id="spaceit"> </div>
+
+			<div id="maincol">

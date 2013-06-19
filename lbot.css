@@ -1,0 +1,418 @@
+
+a {
+	text-decoration: none;
+}
+
+#results {
+	width: 712px;
+	padding: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ccccff;
+}
+
+.alternate {
+	background-color:#eeeeee;
+}
+
+.hanzi {
+	font-size: 1.6em;
+}
+
+#entryTerm {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bigText {
+	font-size: 4em;
+}
+
+#pinyin {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.6em;
+	color:#3f3f3f;
+	/*color:#1d80a1;*/
+	word-spacing:0.4em;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.push {
+	font-size: 0.7em;
+}
+
+#rlist {
+	border-collapse: collapse;
+	margin: 0 1em;
+	position: relative;
+	width: 97%
+}
+
+/*.rlist {
+	border-collapse: collapse;
+	position: relative;
+	width: 100%;
+}*/
+
+#rcol {
+	/*width: 175;*/
+	width: 25%;
+}
+
+#noresult {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+#logo {
+	/*padding-top: 0.3em;*/
+	position: relative;
+	left: 1.6em;
+	float: left; 
+	background: white;
+	height: 70px;
+	width: 32%;
+
+}
+
+li {
+	display: inline;
+	background: white;
+	color: #1d80a1;
+	height: 38px
+	/*line-height:25px;*/
+}
+
+ul {
+	display: inline;
+	/*line-height:25px;*/
+}
+
+#nav {
+	background: white;
+	color: #1d80a1;
+	font-size: 1.4em;
+	position: relative; /*this is what it's all about!!!*/
+	top: 5px;
+	float: left;
+	margin-left: 15%;
+	height: 40px;
+	/*width: 60%;*/
+	padding-right: 2em;
+	display:inline-block;
+	line-height:34px;
+	/*line-height:55px;*/ /* for the love of god don't remove this */
+
+	/*-moz-border-radius: 0.4em;
+	border-radius: 0.6em;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1d80a1;*/
+}
+
+.selected {
+	background: white;
+	color: gray;
+	display:inline-block;
+	position: relative;
+	top: 1px;
+	padding: 1px, 0.2em;
+	height: 34px;
+
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+}
+
+a.option {
+	background-color: white;
+	color: #1d80a1;
+	display:inline-block;
+	position: relative;
+	top: 1px;
+	padding: 1px, 0.2em;
+	height: 34px;
+}
+
+.newtag {
+	font-size: 0.4em;
+	color: red;
+	vertical-align: top;
+}
+
+/*a.option:hover,a.option:active {
+	background-color: #1d80a1;
+	color: white;
+	height: 34px;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+}*/
+
+a.option:hover,a.option:active {
+	color: darkgray;
+	height: 34px;
+}
+
+#speaker {
+	width: 16px;
+	height: 16px;
+	vertical-align:top;
+}
+
+.bighan-play {
+	font-size: 3em;
+	color: #1d80a1;
+	cursor: pointer;
+}
+
+.bighan-noplay {
+	font-size: 3em;
+}
+
+#entryInfo {
+	top: 2em;
+	width: 47.5%;
+	position: relative;
+	float: left;
+}
+
+#tradHan {
+	color:#3f3f3f;
+	font-size: 2em;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	
+}
+
+.tradLabel {
+	margin-top: 3px;
+	font-size: 0.85em;
+	text-align: center;
+	color:#3f3f3f;
+}
+
+#hsk {
+	text-align: center;
+	color: #3f3f3f;
+}
+
+#defs {
+	top: 2em;
+	width: 47.5%;
+	position: relative;
+	float: right;
+	margin-bottom:2em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1d80a1;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.6em;
+	padding: 4px;
+}
+
+.defString {
+	position: relative;
+	text-align: center;
+	padding-bottom: 0.2em;
+	font-size: 1.3em;
+}
+
+#charBig {
+	font-size: 6em;
+	font-family:"KaiU",Ming,Serif;
+	position: relative;
+	margin-left: 30%;
+	margin-right: auto;
+}
+
+#readings {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+#traditional {
+  /*font-size: 0.75em;*/
+  color: lightgray;
+}
+
+.playme {
+	color: #1d80a1;
+	cursor: pointer;
+}
+
+.superscr {
+	font-size: 1.8em;
+	vertical-align: top;
+}
+
+#supernote {
+	color: gray;
+	font-size: 0.8em;
+	position: relative;
+	margin-top: 8px;
+}
+
+#extraInfo {
+	color: #1d80a1;
+	font-size: 1.1em;
+	width: 100%;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1d80a1;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.6em;
+	padding: 4px;
+	margin-bottom: 8px;
+}
+
+.pronunIpa {
+	color: #3f3f3f;
+	font-size: 1.6em;
+	text-align: center;
+}
+
+#charinfo {
+	width: 100%;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1d80a1;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.6em;
+	padding: 4px;
+}
+
+.grayLabel {
+	color: #3f3f3f;
+	font-size: 0.85em;
+}
+
+#individualChars {
+	color: #1d80a1;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+a.onehan {
+	color: #1d80a1;
+	font-size: 1.3em;
+	margin: 0.2em;
+	padding: 2px;
+}
+
+a.onehan:hover, a.onehan:active {
+	color: gray;
+}
+
+
+
+.quote {
+	font-style: italic;
+}
+
+#entrydat {
+	width: 96%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	/*background: blue;*/
+}
+
+#simpletext {
+	display:inline-block;
+	width: 98%;
+	position: relative;
+	top: 1em;
+	left: 1%;
+	right: 20%;
+	/*color: dimgray;*/
+	text-align: left;
+	margin-bottom: 2em;
+}
+
+p {
+	color:#3f3f3f;
+}
+
+#cclogo1 {
+	display:inline-block;
+	position: relative;
+	left: 40%;
+	border-style: none;
+}
+
+.ccsmall {
+	position: relative;
+	top: 6px;
+}
+
+
+a.gray {
+	color: gray;
+}
+
+#license {
+	position: relative;
+	top: 15px;
+	color: gray;
+	font-size: 0.8em;
+	height: 30px;
+	line-height: 28px;
+	vertical-align: center;
+}
+
+.helpsection {
+	font-weight: bold;
+	color: #3f3f3f;
+}
+
+.pagehead {
+	color: #3f3f3f;
+	text-align: center;
+	font-size: 1.7em;
+	font-family: Sans-serif;
+	margin-bottom: 1em;
+}
+
+.darktext {
+	color: black;
+	display:inline;
+	text-align: center;
+	width: 100%;
+}
+
+.example {
+	color: black;
+	display:inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.graytext {
+	color: #3f3f3f;
+}
+
+/* ******************************************************************** */ 
+/*                      printer styles                                  */ 
+/* ******************************************************************** */ 
+     
+ @media print{ 
+
+/*hide the right column when printing*/ 
+#rightcol{display:none;} 
+#twocols, #maincol{width:100%; float:none;}
+}

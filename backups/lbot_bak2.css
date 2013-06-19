@@ -1,0 +1,216 @@
+
+html, body{ 
+ margin:0; 
+ padding:0; 
+ text-align:center;
+ background: #f8f8f8;
+} 
+
+a {
+	text-decoration: none;
+}
+
+#results {
+	width: 712px;
+	padding: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ccccff;
+}
+
+.alternate {
+	background-color:#eeeeee;
+}
+
+.hanzi {
+	font-size: 1.6em;
+}
+
+.rlist {
+	border-collapse: collapse;
+}
+
+
+
+#pagewidth {
+	/*width:78%;*/
+	width: 958px;
+	text-align:left; 
+	margin:0 auto;
+	background: white;
+}
+
+#topline {
+ position:relative; 
+ height:10px; 
+ background-color:white;
+ width:100%;
+}
+
+#header{
+ position:relative; 
+ height:55px; 
+ /*background-color:#1d80a1;*/
+ width:100%;
+ display:block;
+ /*overflow:hidden;*/
+}
+
+#twocols{
+	width:958px; 
+	float:right; 
+	position:relative;
+
+	/*border-style: solid;
+	border-width: 1px;
+	border-color: #1d80a1;*/
+  }
+
+#rightcol{
+	width:20%; 
+	float:right; 
+	position:relative;
+	background:white;
+	min-height: 600;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	border-left-color: #ccccff;
+}
+ 
+#maincol{
+	background-color: #FFFFFF;  
+	float: left; 
+	position: relative; 
+	width:79%;
+	min-height: 600;
+
+	/*border-style: solid;
+	border-width: 1px;
+	border-color: #ccccff;*/
+}
+
+#footer{
+ height:70px; 
+  background-color:gray; 
+ clear:both;
+ display:block;
+ overflow:hidden;
+}
+
+.clearfix:after {
+ content: "."; 
+ display: block; 
+height: 0; 
+ clear: both; 
+ visibility: hidden;
+ }
+ 
+.clearfix{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */  
+
+#logo {
+	/*padding-top: 0.3em;*/
+	position: relative;
+	float: left; 
+	background: white;
+	height: 55px;
+	width: 30%;
+
+}
+
+li {
+	display: inline;
+	color: white;
+	background-color: #1d80a1;
+	height: 38px
+	/*line-height:25px;*/
+}
+
+ul {
+	display: inline;
+	/*line-height:25px;*/
+}
+
+#nav {
+	color: white;
+	background-color: #1d80a1;
+	font-size: 1.6em;
+	position: relative; /*this is what it's all about!!!*/
+	top: 17px;
+	float: left;
+	height: 38px;
+	width: 70%;
+	display:inline-block;
+	line-height:38px;
+	/*line-height:55px;*/ /* for the love of god don't remove this */
+}
+
+#radiustest {
+	background-color: white;
+	color: #1d80a1;
+	/*width: 200px;
+	height: 38px;*/
+	position: relative;
+	/*top: 1.6em;
+	left: 1.6em;*/
+	float: right;
+	line-height: 3em;
+	text-align:center;
+
+	/*border-radius: 0.5em;
+	-moz-border-radius: 0.5em;*/
+
+	height: 2.5em;
+	width: 12em;
+	-moz-border-radius: 4em 0.8em 4em 0.8em;
+	border-radius: 4em 0.9em 4em 0.9em;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1d80a1;
+}
+
+#entryform {
+	position: relative;
+	top: 1.6em;
+	left: 1.6em;
+}
+
+a.option {
+	color: white;
+	background-color: #1d80a1;
+	display:inline-block;
+	height: 38px;
+}
+
+a.option:hover,a.option:active {
+	background-color: white;
+	color: #1d80a1;
+	height: 38px;
+}
+
+.quote {
+	font-style: italic;
+}
+
+#qbox {
+	width:300px;
+	padding: 3px;
+}
+
+/* ******************************************************************** */ 
+/*                      printer styles                                  */ 
+/* ******************************************************************** */ 
+     
+ @media print{ 
+
+/*hide the right column when printing*/ 
+#rightcol{display:none;} 
+#twocols, #maincol{width:100%; float:none;}
+}

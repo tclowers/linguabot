@@ -1,0 +1,105 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Content-type" value="text/html; charset=utf-8">
+<link rel="shortcut icon" href="http://localhost/linguaBotC2E/favicon.ico">
+<title> LinguaBot C-E Dictionary Lookup </title>
+<link rel="stylesheet" type="text/css" href="wordDisplay_layout_files/lbot.css">
+<link rel="stylesheet" type="text/css" href="wordDisplay_layout_files/layout.css">
+
+<script type="text/javascript" src="wordDisplay_layout_files/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('input[type="text"]').focus(function() {
+        if (this.value == this.defaultValue) this.value = '';
+    });
+    $('input[type="text"]').blur(function() {
+        if (this.value == '') this.value = (this.defaultValue ? this.defaultValue : '');
+    });
+});
+</script>
+
+<!-- Sound Manager 2 Stuff  -->
+<script type="text/javascript" src="wordDisplay_layout_files/soundmanager2-nodebug-jsmin.js"></script>
+<!-- Or, with debug: -->
+<!--<script type="text/javascript" src="./sm2/script/soundmanager2.js"></script>-->
+<script type="text/javascript">
+soundManager.url = './sm2/swf/';
+soundManager.flashVersion = 9; // optional: shiny features (default = 8)
+soundManager.useFlashBlock = false; // optionally, enable when you're ready to dive in
+// enable HTML5 audio support, if you're feeling adventurous. iPad/iPhone will always get this.
+// soundManager.useHTML5Audio = true;
+soundManager.onready(function() {
+  // Ready to use; soundManager.createSound() etc. can now be called.
+});
+</script>
+
+<!-- end Sound Manager 2 -->
+
+</head><body>
+<div id="pagewidth">
+	<div id="topline"> </div>
+	<div id="wrapper" class="clearfix">
+		<div id="twocols">
+			<div id="logo">
+				<img src="wordDisplay_layout_files/logo.png">
+			</div> <!--end logo -->
+			<div id="nav">
+				<ul>
+					<li><a href="http://localhost/linguaBotC2E/this.html" class="selected">Dictionary</a></li>
+					<li>|</li>
+					<li><a href="http://localhost/linguaBotC2E/credits.php" class="option">Trainer</a></li>
+					<li>|</li>
+					<li><a href="http://localhost/linguaBotC2E/credits.php" class="option">Games</a></li>
+					<li>|</li>
+					<li><a href="http://localhost/linguaBotC2E/credits.php" class="option">About</a></li>
+					<li>|</li>
+					<li><a href="http://localhost/linguaBotC2E/that.html" class="option">Help</a></li>
+				</ul>
+			</div> <!-- end nav -->
+
+
+			<div id="entryform">
+				<form action="dictLookup.php" method="get">
+				<span id="searchlabel">Dictionary Lookup:</span>
+				<input name="word" value="Enter English, Chinese, or Pinyin here" id="qbox" type="text">
+				<input id="lookup" value="Go" type="submit">
+				</form>
+			</div> <!--end entryform -->
+
+			<div id="spaceit"> </div>
+
+			<div id="maincol">
+				<div id="entrydat">
+
+<div id="hanziStr">
+<a onclick="javascript:soundManager.play('myqing1','./mandarin_sounds/qing1.mp3');" id="bighan" class="playme">青</a>
+<a onclick="javascript:soundManager.play('myjie4','./mandarin_sounds/jie4.mp3');" id="bighan" class="playme">芥</a>
+<a onclick="javascript:soundManager.play('myla4','./mandarin_sounds/la4.mp3');" id="bighan" class="playme">辣</a>
+</div> <!-- end div hanziStr -->
+<div id="pinyin">qīng jiè là</div>
+(青芥辣)<br><div id="charinfo">Character Info: 
+<a href="http://localhost/linguaBotC2E/charDetail.php?hanChar=%E9%9D%92" id="onehan" class="outlined">青</a>
+<a href="http://localhost/linguaBotC2E/charDetail.php?hanChar=%E8%8A%A5" id="onehan" class="outlined">芥</a>
+<a href="http://localhost/linguaBotC2E/charDetail.php?hanChar=%E8%BE%A3" id="onehan" class="outlined">辣</a>
+</div>
+<br>English definitions:<br><a href="http://localhost/linguaBotC2E/wordDisplay.php?wId=horseradish&amp;targetLang=en">horseradish</a><br><a href="http://localhost/linguaBotC2E/wordDisplay.php?wId=wasabi&amp;targetLang=en">wasabi</a><br><a href="http://localhost/linguaBotC2E/wordDisplay.php?wId=green%20mustard&amp;targetLang=en">green mustard</a><br>
+				</div> <!-- end entrydat -->
+
+			</div> <!-- end maincol -->
+
+			<div id="rightcol">
+				<div id="boxes">
+					<img src="wordDisplay_layout_files/gads.gif" id="gads">
+				</div>
+			</div> <!-- end rightcol -->
+			
+
+		</div> <!-- end twocols -->
+	</div> <!-- end wrapper -->
+
+	<div id="spaceit"> </div>
+	<div id="footer"><h2>Footer</h2></div>
+</div> <!--end pagewidth -->
+
+<div style="position: absolute; width: 6px; height: 6px; top: -9999px; left: -9999px;" class="movieContainer " id="sm2-container"><embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" bgcolor="#ffffff" allowscriptaccess="always" quality="high" src="wordDisplay_layout_files/soundmanager2_flash9.swf" id="sm2movie" name="sm2movie" height="100%" width="100%"></div></body></html>
